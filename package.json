@@ -1,0 +1,9 @@
+{
+  "name": "particula.devbitapp.be",
+  "version": "0.0.1",
+  "description": "Particula Project Documentation",
+  "main": "index.js",
+  "repository": "git@github.com:vives-projectwerk-2-2020/particula.devbitapp.be.git",
+  "author": "Nico De Witte <nico.dewitte@vives.be>",
+  "license": "MIT"
+}
