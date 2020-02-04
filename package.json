@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "git@github.com:vives-projectwerk-2-2020/particula.devbitapp.be.git",
   "author": "Nico De Witte <nico.dewitte@vives.be>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.3.0"
+  }
 }

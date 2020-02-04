@@ -7,5 +7,5 @@ This project is using markdown and VuePress to generate a static site.
 Setup local dev server
 
 ```shell
-npm run docs:dev
+yarn run docs:dev
 ```
