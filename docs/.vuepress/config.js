@@ -3,7 +3,7 @@ module.exports = {
   description: 'Particula Project Documentation',
   themeConfig: {
     nav: [
-      {text: 'Redmine', link: 'https://project.devbit.be'},
+      {text: 'Redmine', link: 'https://project.devbit.be/projects/particula'},
       {text: 'Organization', link: 'https://github.com/vives-projectwerk-2-2020'}
     ],
     sidebar: [
