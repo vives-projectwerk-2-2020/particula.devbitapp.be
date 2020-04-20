@@ -7,7 +7,8 @@ module.exports = {
       {text: 'Organization', link: 'https://github.com/vives-projectwerk-2-2020'}
     ],
     sidebar: [
-      '/'
+      '/',
+      ['/docker/', 'Docker']
     ],
     sidebarDepth: 1,
     repo: 'vives-projectwerk-2-2020/particula.devbitapp.be',
