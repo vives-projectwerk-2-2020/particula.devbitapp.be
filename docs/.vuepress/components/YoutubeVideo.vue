@@ -1,7 +1,7 @@
 <template>
   <iframe 
-    width="560" 
-    height="315" 
+    width="800" 
+    height="480" 
     :src="youtubeUrl" 
     frameborder="0" 
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
