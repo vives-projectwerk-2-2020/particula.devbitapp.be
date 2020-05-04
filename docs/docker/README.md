@@ -2,7 +2,7 @@
 
 ## Particula UML
 
-![uml diagram](assets/uml-project.png)
+![uml diagram](./assets/uml-project.png)
 
 ## TODO
 
@@ -35,16 +35,16 @@ You need to get the docker toolbox. `https://github.com/docker/toolbox/releases`
 
 Get the latest `.exe` version for the toolbox.
 
-![docker toolbox install](assets/docker-toolbox-install.JPG)
+![docker toolbox install](./assets/docker-toolbox-install.jpg)
 
 You can run the `Docker Quickstart Terminal` to use the Docker environment.
 
-![docker quickstart terminal](assets/docker-quickstart-terminal.PNG)
+![docker quickstart terminal](./assets/docker-quickstart-terminal.png)
 
 Run the terminal and wait a couple of moments until the
 terminal is open and active. You will get a `machine IP`.
 
-![docker booted terminal](assets/docker-booted-terminal.PNG)
+![docker booted terminal](./assets/docker-booted-terminal.png)
 
 This IP is very important to connect to your local containers.
 -> More about this later
@@ -163,11 +163,11 @@ DROP SERIES FROM sensors
 
 You want to create an image through Github Actions.
 
-![docker image step 1](assets/image-creating-1.PNG)
+![docker image step 1](./assets/image-creating-1.png)
 
-![docker image step 2](assets/image-creating-2.PNG)
+![docker image step 2](./assets/image-creating-2.png)
 
-![docker image step 3](assets/image-creating-3.PNG)
+![docker image step 3](./assets/image-creating-3.png)
 
 See the .github folder in the project for an example.
 
