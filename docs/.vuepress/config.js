@@ -8,7 +8,8 @@ module.exports = {
     ],
     sidebar: [
       '/',
-      ['/docker/', 'Docker']
+      ['/docker/', 'Docker'],
+      ['/presentations/', 'Presentations']
     ],
     sidebarDepth: 1,
     repo: 'vives-projectwerk-2-2020/particula.devbitapp.be',
