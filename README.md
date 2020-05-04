@@ -20,4 +20,5 @@ Setup local dev server
 npm run docs:dev
 ```
 
-Open your browser and go to http://localhost:8080 to preview the result
+Open your browser and go to [http://localhost:8080](http://localhost:8080) to 
+preview the result.
