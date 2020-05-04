@@ -20,5 +20,13 @@ Setup local dev server
 npm run docs:dev
 ```
 
-Open your browser and go to [http://localhost:8080](http://localhost:8080) to 
+Open your browser and go to [http://localhost:8080](http://localhost:8080) to
 preview the result.
+
+## Checking for Markdown errors
+
+Run the linter tool to check if any Markdown syntax errors in your files:
+
+```bash
+npm run lint
+```
