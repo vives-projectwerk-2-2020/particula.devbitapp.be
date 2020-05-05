@@ -9,6 +9,7 @@ module.exports = {
     sidebar: [
       '/',
       ['/docker/', 'Docker'],
+      ['/backend/', 'Backend'],
       ['/presentations/', 'Presentations']
     ],
     sidebarDepth: 1,
