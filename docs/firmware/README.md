@@ -31,7 +31,7 @@ This is a template, rename it to `settings.h` and add the following keys:
 (All of these keys can be retrieved from a TTN application.)
 
 Need more information about how to setup or add your device to The Things Network?
-Have a look [here](./TTN_README.md).
+Have a look [here](../ttn/).
 
 When this file is set up, connect your hardware and run the following command:
 
