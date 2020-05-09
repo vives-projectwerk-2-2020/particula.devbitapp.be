@@ -10,6 +10,8 @@ module.exports = {
       '/',
       ['/docker/', 'Docker'],
       ['/backend/', 'Backend'],
+      ['/firmware/', 'Firmware'],
+      ['/ttn/', 'The Things Network'],
       ['/presentations/', 'Presentations']
     ],
     sidebarDepth: 1,
