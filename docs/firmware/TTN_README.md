@@ -61,5 +61,5 @@ You only need to do this if you are setting up a new TTN application:
 
 - Go to the 'Payload Formats' tab when you are in the newly created application
 - Copy-paste the code from the 'TTN-Payload-Decoder.js' file here
-(file is included in this repo)
-- And don't forget to click the 'save' button at the bottom of that page
+(file is included in the firmware)
+- And don't forget to click the 'save' button at the bottom of the page

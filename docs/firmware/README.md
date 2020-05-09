@@ -7,12 +7,12 @@
 ### Setting up the development environment
 
 First of all you will need an development environment for Mbed OS.
-Just pick the right installer for you system [here](https://os.mbed.com/docs/mbed-os/v5.15/tools/installation-and-setup.html).
+Just pick the right installer for you're system [here](https://os.mbed.com/docs/mbed-os/v5.15/tools/installation-and-setup.html).
 
 ### Clone, install and flash the firmware
 
 Next clone the project and install the dependencies.
-Then setup your mbed development environment to compile the firmware and flash it.
+Then setup your mbed development environment to compile the firmware and flash it:
 
 ```PowerShell
 git clone git@github.com:vives-projectwerk-2-2020/Particula-Firmware.git
@@ -30,14 +30,15 @@ This is a template, rename it to `settings.h` and add the following keys:
 `devEui`, `appEui`, `appKey`.
 (All of these keys can be retrieved from a TTN application.)
 
+Need more information about how to setup or add your device to The Things Network?
+Have a look [here](./TTN_README.md).
+
 When this file is set up, connect your hardware and run the following command:
 
 ```PowerShell
 mbed compile -f
 ```
 
-Need more information about how to setup or add your device to The Things Network?
-Have a look [here](./TTN_README.md).
 
 ## Pinout
 
