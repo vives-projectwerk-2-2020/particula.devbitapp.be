@@ -39,7 +39,6 @@ When this file is set up, connect your hardware and run the following command:
 mbed compile -f
 ```
 
-
 ## Pinout
 
 ### LoRaWAN + EEPROM Arduino compatible shield
