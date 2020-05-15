@@ -32,15 +32,16 @@ vendor/bin/phinx create MyNewMigration
 The historical data is accessible by following these steps.
 The measurements of a sensor can be requested via the following url using its GUID.
 
-```
+```http
 https://develop.particula.devbitapp.be/measurements/{GUID}
 ```
 
-To be able to display data you have to enter a period: (Available values: 1h, 24h, 7d, 30d, 1y, 3y, all)
+To be able to display data you have to enter a period:
+(Available values: 1h, 24h, 7d, 30d, 1y, 3y, all)
 
 Default value : 24h
 
-```
+```http
 https://develop.particula.devbitapp.be/measurements/{GUID}?period=1h&properties=pm2.5
 ```
 
@@ -48,14 +49,18 @@ in this case we add the pm2.5 value of the sensor for the past 1h.
 
 This can also be displayed thanks to insomnia:
 
-![](assets/insomnia1.png)
+![insomnia](./assets/insomnia1.png)
 
-When values greater than 1h (24h, 7d, 30d, 1y, 3y, all) are requested, averages are used so that the number of responses is limited to 300-400.
-When you request data that is not yet in the database, you will receive NULL for the nonexistent data as shown below.
+When values greater than 1h (24h, 7d, 30d, 1y, 3y, all) are requested,
+averages are used so that the number of responses is limited to 300-400.
+When you request data that is not yet in the database,
+you will receive NULL for the nonexistent data as shown below.
 
-![](assets/insomniaOld1.png)
+![insomnia](./assets/insomniaOld1.png)
 
-Additional information related to the structure of this application can be found at: [SwaggerHub Particula](https://app.swaggerhub.com/apis-docs/sillevl/Particula)
+Additional information related to the structure of this application
+can be found at:
+[SwaggerHub Particula](https://app.swaggerhub.com/apis-docs/sillevl/Particula)
 
 ## Routes for MariaDB
 
