@@ -29,36 +29,33 @@ vendor/bin/phinx create MyNewMigration
 
 ## api-data-influxdb
 
-De Hisorische data kan je opvragen door volgende stappen te volgen.
-Eerst roepen we de server aan op de poort
-van de backend, hier vermelden we bij
-dat we de meetingen willen opvragen:
+The historical data is accessible by following these steps.
+The measurements of a sensor can be requested via the following url using its GUID.
 
-```http
-http://develop.particula.devbitapp.be:8080/measurements
+```
+https://develop.particula.devbitapp.be/measurements/{GUID}
 ```
 
-door hierbij het id toe te voegen krijg je een specifieke sensor:
+To be able to display data you have to enter a period: (Available values: 1h, 24h, 7d, 30d, 1y, 3y, all)
 
-```http
-http://develop.particula.devbitapp.be:8080/measurements/nico-prototype-l432
+Default value : 24h
+
+```
+https://develop.particula.devbitapp.be/measurements/{GUID}?period=1h&properties=pm2.5
 ```
 
-Om data te kunnen weergeven moet je een periode en een propertie toevoegen:
+in this case we add the pm2.5 value of the sensor for the past 1h.
 
-```http
-http://develop.particula.devbitapp.be:8080/measurements/nico-prototype-l432?period=1d&properties=pm25
-```
+This can also be displayed thanks to insomnia:
 
-in dit geval voegen we de pm2.5 waarde van de sensor
-van nico dit van de afgelopen 24h.
+![](assets/insomnia1.png)
 
-Dit kan ook weergegeven worden dankzij insomnia:
+When values greater than 1h (24h, 7d, 30d, 1y, 3y, all) are requested, averages are used so that the number of responses is limited to 300-400.
+When you request data that is not yet in the database, you will receive NULL for the nonexistent data as shown below.
 
-![insomnia sensor](./assets/insomnia.png)
+![](assets/insomniaOld1.png)
 
-Extra informatie in verband met de structuur van deze
-toepassing is te vinden op `https://app.swaggerhub.com/apis-docs/sillevl/Particula/0.1#/`
+Additional information related to the structure of this application can be found at: [SwaggerHub Particula](https://app.swaggerhub.com/apis-docs/sillevl/Particula)
 
 ## Routes for MariaDB
 
