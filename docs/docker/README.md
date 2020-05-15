@@ -1,14 +1,12 @@
 # particula-docker-compose
 
-## Particula UML
+[GitHub homepage](https://github.com/vives-projectwerk-2-2020/particula-docker-compose)
+
+## UML diagram
 
 ![uml diagram](./assets/uml-project.png)
 
-## TODO
-
-Issues on Redmine.
-
-## TUTORIAL
+## Docker and Docker Compose introduction
 
 ### What is Docker
 
@@ -31,7 +29,8 @@ sudo apt-get install docker-compose
 
 #### Installation on Windows
 
-You need to get the docker toolbox. `https://github.com/docker/toolbox/releases`
+You need to get the docker toolbox.
+`https://github.com/docker/toolbox/releases`
 
 Get the latest `.exe` version for the toolbox.
 
@@ -94,69 +93,128 @@ docker kill particula-docker-compose_frontend_1
 docker kill $(docker ps -q)
 ```
 
-### Connecting to the services
+## Containers
 
-#### Connecting to Backend on Linux
+The project uses 9 containers in total,
+this section gives a bit more information about them.
+For more detailed information about them
+there will be a link to the github repo if applicable.
 
-In your browser, go to : `localhost:3000`
+### Traefik
 
-#### Connecting to Grafana on Linux
+For the communication between all containers Traefik is used,
+this means there is no need to leave any port open.
+This service is configured to use a `HTTP challenge` for HTTPS
+which requires to create a empty `acme.json` file.
+The Traefik dashboard can be visited at `traefik.<host>`
+and is secured with a login, the user can be configured
+in `docker-compose.yml` under `traefik` change the `basic auth` labels.
+For more information about Traefik ["click here"](https://docs.traefik.io).
 
-In your browser, go to : `localhost:3001`
+### Frontend
 
-#### Connecting to Front-end on Linux
+More information about the frontend can be found at:
+[GitHub](https://github.com/vives-projectwerk-2-2020/Frontend).
 
-In your browser, go to : `localhost`
+### Grafana
 
-#### Connecting to services on Windows
+To quickly view the data of a sensor a Grafana dashboard
+is made and is mapped on a subdomain `grafana.<host>`.
 
-Check your Docker_Toolbox machine IP and in your browser go to: `machineip:port`
+### InfluxDB
 
-##### Connecting to Backend on Windows
+The data from a sensor is send to a InfluxDB,
+more information about the data can be found in the backend project at:
+[GitHub](https://github.com/vives-projectwerk-2-2020/back-end).
 
-In your browser, go to : `machineip:8080`
+### LoRaWAN
 
-##### Connecting to Grafana on Windows
+The LoRaWAN container connects to The Things Network
+and sends the data to the InfluxDB.
 
-In your browser, go to : `machineip:3001`
+### MQTT
 
-##### Connecting to Front-end on Windows
+An MQTT container is setup as a broker to be able to send
+live data to the Frontend.
 
-In your browser, go to : `machineip`
+### Authentication api
 
-## InfluxDB
+The login page of the frontend uses an authentication api
+which is running in this container.
+More information about this api can be found at:
+[GitHub](https://github.com/vives-projectwerk-2-2020/Authentication-API).
 
-`https://docs.influxdata.com/influxdb/v1.7/tools/api/`
+### Backend
 
-### Sending data with Postman
+The Backend container houses the api for retrieving information about
+sensors and their measurements. More information about
+the routes available can be found at:
+[GitHub](https://github.com/vives-projectwerk-2-2020/back-end).
 
-To push data to `particulaInfluxDB` with postman create following POST request:
+### DB
 
-```http
-POST http://localhost:8086/write?db=particulaInfluxDB&precision=s
+The final container DB uses the MariaDB image and provides
+the data for the backend.
+
+## Environment variables
+
+For this project quite a few environment variables are used in a `.env` file.
+The first ones being for setting the domain name which is set to `localhost`
+by default. Followed by the branch you want to use to quickly switch
+between `master` and `develop`.
+
+```bash
+DOMAIN=localhost
+BRANCH=
 ```
 
-body
+Next are the variables used for connecting to The Things Network and
+the IP of our MQTT Broker.
 
-```markdown
-sensors,sensor_id=sensor-test humidity=59,pm10=23,pm25=12,temperature=21.5 1581880318
+```bash
+APP_ID=
+ACCESSKEY=
+REAL_TIME_IP=
 ```
 
-### Viewing data with Postman
+After that you will need to configure the InfluxDB, this is where
+the sensordata is being send to.
 
-In case the port is left unchanged (can be checked with docker ps)
-following is an example to view all data within `sensors`:
-
-```http
-GET http://localhost:8086/query?db=particulaInfluxDB&q=select * from sensors
+```bash
+INFLUX_IP=
+INFLUX_PORT=
+INFLUX_DB_NAME=
 ```
 
-### Clearing series
+A Grafana container is used to have a quick overview
+of the sensors and their data.
+Sinc this is configured on a subdomain you will need to set a `ROOT_URL` and
+the `SUB_PATH` it will be served at. Also the admin user can be preconfigured.
 
-To remove all data in a measurement execute following query:
+```bash
+GF_SERVER_ROOT_URL=
+GF_SECURITY_ADMIN_USER=
+GF_SECURITY_ADMIN_PASSWORD=
+GF_SERVER_SERVE_FROM_SUB_PATH=
+```
 
-```sql
-DROP SERIES FROM sensors
+Next is the MySQL container which stores information about `users`
+and `sensors`.
+
+```bash
+MYSQL_ROOT_PASSWORD=
+MYSQL_DRIVER=
+MYSQL_HOST=
+MYSQL_DATABASE=
+MYSQL_USER=
+MYSQL_PASSWORD=
+```
+
+At last there is a `authentication-api` for creating and authenticating
+users which requires one variable to be set.
+
+```bash
+ASPNETCORE_URLS=
 ```
 
 ## Docker Image on the Server
@@ -183,3 +241,9 @@ Run this command on your server:
  docker login -u USERNAME docker.pkg.github.com
  -> ACCESTOKEN
 ```
+
+### Unfinished
+
+- Make Traefik independent from docker-compose
+- Continous integration
+- Status page
