@@ -2,6 +2,37 @@
 
 [View the firmware GitHub repo](https://github.com/vives-projectwerk-2-2020/Particula-Firmware)
 
+The Particula project is about a Smart Self-Sufficient
+Open Wireless Air Quality Sensor.
+This IoT device makes use of a particle sensor,
+a tph sensor (temperature, pressure, humidity) and LoRaWAN to transmit the data.
+
+Take a look below to see what hardware you need (boards, sensors, modules)
+to start building this project.
+
+Hardware and software surely go hand in hand, so, to bring life to the hardware
+of this project we present you, the firmware. Once you sourced the hardware
+you can look below to see how to get the firmware up and running.
+
+## The hardware
+
+For development we used these two types of development boards:
+
+- Nucleo L432KC
+- Nucleo L476RG
+
+With the following sensors/modules:
+
+- RFM95W (LoRa)
+- Bosch BME280 (temperature, pressure, humidity)
+- SDS011 Particle sensor
+
+The final hardware:
+
+- [Solar panel with charge system](https://github.com/vives-projectwerk-2-2020/FinalSolarChargeSystem)
+- [Prototype board with sensors](https://github.com/vives-projectwerk-2-2020/Prototype_Board_Niels.git)
+- [LoRaWAN antanna board](https://github.com/vives-projectwerk-2-2020/LoRaWAN-antenna.git)
+
 ## Getting started
 
 ### Setting up the development environment
@@ -43,20 +74,18 @@ mbed compile -f
 
 ### LoRaWAN + EEPROM Arduino compatible shield
 
-We use the default pinmap of the shield,
-make sure the dip switches on the back of the shield are configured correctly.
+We use the default pinmap of the shield, make sure the dip switches on the back
+of the shield are configured correctly.
 
 | Signal | Default pin
 |--|--|
 | MOSI | D11
 | MISO | D12
 | CLK | D13
-| NSS | A0
-| RESET | A1
+| NSS | A0 (A3 on NUCLEO_L432KC)
+| RESET | A1 (A4 on NUCLEO_L432KC)
 | DIO 0 | D2
 | DIO 1 | D3
-
-On the NUCLEO_L432KC the A3 pin is used for NSS and A4 is used for RESET.
 
 ### BME280 (TPH) sensor
 
@@ -85,36 +114,28 @@ TX and RX lines for the different development boards:
 
 (remember to connect sensor-RX to nucleo-TX and vice versa)
 
-### What pins should I use with a different board
+For later implementation of the charge controller functionality the following
+pins have been implemented:
+
+| Pin 1 | Pin 2 | Pin 3 |
+|---|---|---|
+| D6 | D7 | D8 |
+
+## What pins should I use with a different board
 
 Choose UART RX and TX pins of your choice for the SDS011 particle sensor
 and I2C SDA and SCK pins for the BME280 TPH sensor.
-You can add your board with it's preferred pins for serial communication to the
-`target_overrides` section in the `mbed_app.json` file.
-
-### Example `target_overrides` section
-
-```json
-"target_overrides": {
-        "NUCLEO_L476RG": {
-            "i2c_sda": "D14",
-            "i2c_sck": "D15",
-            "uart_tx": "A4",
-            "uart_rx": "A5",
-            "lora_nss": "A0",
-            "lora_reset": "A1"
-        },
-        "NUCLEO_L432KC": {
-            "i2c_sda": "D4",
-            "i2c_sck": "D5",
-            "uart_tx": "D1",
-            "uart_rx": "D0",
-            "lora_nss": "A3",
-            "lora_reset": "A4"
-        }
-```
+You can add your board with it's preferred pins for serial communication
+to the `target_overrides` section in the `mbed_app.json` file.
 
 ## TTN Payload Decoder Output Example
+
+The payload decoder itself, needed to decode the transmitted message in TTN
+(The Things Network) can be found in the `payload-decoder.js`
+file in the firmware repository.
+
+This is the form of the JSON object provided after the payload decoder did
+it's work.
 
 ```javascript
 {
@@ -145,17 +166,23 @@ You can add your board with it's preferred pins for serial communication to the
 
 ## Used modules and libraries
 
-### LoRaWAN RFM95W Transceiver (over ISP)
+### LoRaWAN RFM95W Transceiver (ISP)
 
 - [Mbed-Simple-LoRaWAN](https://github.com/sillevl/mbed-Simple-LoRaWAN)
 - [AmbientSensorMessage](https://github.com/vives-projectwerk-2-2020/AmbiantSensorMessage)
 
-### Bosch BME280 TPH Sensor (over I2C)
+### Bosch BME280 TPH Sensor (I2C)
 
 - [ParticulaTPH](https://github.com/vives-projectwerk-2-2020/ParticulaTPH)
 
-### SDS011 Particel sensor (over UART)
+### SDS011 Particle sensor (UART)
 
 - [SDS011_Library](https://github.com/vives-projectwerk-2-2020/SDS011_Library)
 
-### EEPROM (over I2C)
+### EEPROM (I2C)
+
+We ended up not implementing the functionality from this driver but it's a
+possible future addition.
+It is setup to be able to store you LoRaWAN keys so this can be done in a batch.
+
+- [EEPROM LoRaWAN Keys driver](https://github.com/vives-projectwerk-2-2020/EepromLoraWANKeys)
