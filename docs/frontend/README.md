@@ -74,4 +74,4 @@ Eg. address, city and other location information, but also the sensor's live
 Last but not least, the login page. Here users can sign up or log in to the webapp.
 With an account they can create and add new sensor to the network.
 
-![loginPage](./assets/SensorPageCharts2.png)
+![loginPage](./assets/loginPage.png)
