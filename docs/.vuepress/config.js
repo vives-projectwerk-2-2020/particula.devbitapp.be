@@ -9,6 +9,7 @@ module.exports = {
     sidebar: [
       '/',
       ['/docker/', 'Docker'],
+      ['/frontend/', 'Frontend'],
       ['/backend/', 'Backend'],
       ['/firmware/', 'Firmware'],
       ['/ttn/', 'The Things Network'],

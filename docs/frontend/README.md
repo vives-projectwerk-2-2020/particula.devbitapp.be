@@ -1,11 +1,13 @@
 # The Particula Frontend
 
+[View the frontend GitHub repo](https://github.com/vives-projectwerk-2-2020/Frontend)
+
 ## Install project
 
-### install
+### Install
 
-clone the Particula frontend repository from github. When this is done, change
- directory to the cloned directory.
+Clone the Particula frontend repository from github. When this is done, change
+directory to the cloned directory.
 
 To install all used libraries, use  :
 
@@ -25,11 +27,11 @@ npm run serve
 npm run build
 ```
 
-## small design presentation
+## Small design presentation
 
 A small presentation of the design of the frontend application.
 
-### Home page
+### Home Page
 
 When you go to the hosted webpage, you will see the home page.
 
@@ -39,14 +41,28 @@ Sneak peak homepage :
 ### Sidebar
 
 For routing between the different pages, you can go to the three striped icon
- in the left uppercorner of the webpage. when you click on the this icon, the
- sidebar shows up.
+in the left uppercorner of the webpage. when you click on the this icon, the
+sidebar shows up.
 
 here you can see the sidebar :
 
 ![Sidebar](./assets/sidebar2.png)
 
-### All Sensors page
+### Login Page
+
+Here users can sign up or log in to the webapp.
+With an account they can create and add new sensor to the network.
+
+![loginPage](./assets/loginPage.png)
+
+### Profile Page
+
+This is the profile page, where users can view their personal information
+and delete their account.
+
+![ProfilePage](./assets/profilePage.png)
+
+### All Sensors Page
 
 The most important page of the webapp is the all sensors page.
 On this page you can see all existing sensors.
@@ -55,11 +71,11 @@ From each sensor you can traverse to the sensorpage from this sensor.
 
 ![allSensorsPage](./assets/allSensorsPage.png)
 
-### Sensor page
+### Sensor Page
 
 For each sensor there is a sensorpage with all the information about that sensor.
 Eg. address, city and other location information, but also the sensor's live
- values and historical values in graphs.
+values and historical values in graphs.
 
 ![SensorPage](./assets/SensorPage.png)
 
@@ -69,9 +85,27 @@ Eg. address, city and other location information, but also the sensor's live
 
 ![SensorPageCharts2](./assets/SensorPageCharts2.png)
 
-### Login Page
+## Background Information
 
-Last but not least, the login page. Here users can sign up or log in to the webapp.
-With an account they can create and add new sensor to the network.
+### Login/Registration
 
-![loginPage](./assets/loginPage.png)
+![loginRegister](./assets/loginRegister.png)
+
+Here people can put their credentials in the sign up section and hereby
+put their account in the database.
+
+When they put the right credentials in the login section of the page
+a token will appear (temporarily) in the console.
+With this token you should authenticate the API requests sending a delete,
+edit and getUser signals. At the moment you can use these backend requests
+without authenticated requests.
+
+### PWA Implementation
+
+In the frontend there is PWA implementation. This enables the user to directly
+download the website from the browser on any supported device.
+
+Just go to chrome for example and install app, like in the example.
+
+![pwaDemo](./assets/pwaDemo.png)
+![pwaDemo2](./assets/pwaDemo2.png)

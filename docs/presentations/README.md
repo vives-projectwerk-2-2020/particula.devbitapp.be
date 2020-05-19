@@ -8,6 +8,7 @@
   - [Student 1](#student-1)
   - [Student 2](#student-2)
   - [Student 3](#student-3)
+  - [Maxim Vanden Abeele](#maxim-vanden-abeele)
 
 ## Student 1
 
