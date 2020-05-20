@@ -77,40 +77,40 @@ mbed compile -f
 We use the default pinmap of the shield, make sure the dip switches on the back
 of the shield are configured correctly.
 
-| Signal | Default pin
-|--|--|
-| MOSI | D11  |
-| MISO | D12  |
-| CLK | D13 |
-| NSS | A0 (A3 on NUCLEO_L432KC)  |
-| RESET | A1 (A4 on NUCLEO_L432KC)  |
-| DIO 0 | D2  |
-| DIO 1 | D3  |
+| Signal | Default pin              |
+| ------ | ------------------------ |
+| MOSI   | D11                      |
+| MISO   | D12                      |
+| CLK    | D13                      |
+| NSS    | A0 (A3 on NUCLEO_L432KC) |
+| RESET  | A1 (A4 on NUCLEO_L432KC) |
+| DIO 0  | D2                       |
+| DIO 1  | D3                       |
 
 ### BME280 (Temperature, Pressure, Humidity) Environmental sensor
 
-| From    | To       | Description         |
-|------------|------------|---------------------|
-| VDD        | 3V3        | power supply        |
-| GND        | GND        | common ground       |
-| SDO        | GND        | Selects 0X76 as the address on the I2C buss    |
-| CSB        | VDD        | Selects I2C for communication |
-| SCK        | SCL        | I2C bus clock |
-| SDI        | SDA        | I2C data bus  |
+| From | To  | Description                                 |
+| ---- | --- | ------------------------------------------- |
+| VDD  | 3V3 | power supply                                |
+| GND  | GND | common ground                               |
+| SDO  | GND | Selects 0X76 as the address on the I2C buss |
+| CSB  | VDD | Selects I2C for communication               |
+| SCK  | SCL | I2C bus clock                               |
+| SDI  | SDA | I2C data bus                                |
 
 SDA and SCK lines for the different development boards:
-| Board     | SDA       | SCK       |
-|-----------|-----------|-----------|
-| Nucleo_L432KC | D4 | D5 |
+| Board         | SDA | SCK |
+| ------------- | --- | --- |
+| Nucleo_L432KC | D4  | D5  |
 | Nucleo_L476RG | D14 | D15 |
 
 ### SDS011 (Particle) sensor
 
 TX and RX lines for the different development boards:
-| Board     | TX     | RX      |
-|-----------|-----------|-----------|
-| Nucleo_L432KC | D1 | D0 |
-| Nucleo_L476RG | A4 | A5 |
+| Board         | TX  | RX  |
+| ------------- | --- | --- |
+| Nucleo_L432KC | D1  | D0  |
+| Nucleo_L476RG | A4  | A5  |
 
 (remember to connect sensor-RX to nucleo-TX and vice versa)
 
@@ -118,8 +118,8 @@ For later implementation of the charge controller functionality the following
 pins have been implemented:
 
 | Pin 1 | Pin 2 | Pin 3 |
-|---|---|---|
-| D6 | D7 | D8 |
+| ----- | ----- | ----- |
+| D6    | D7    | D8    |
 
 ## What pins should I use with a different board
 
