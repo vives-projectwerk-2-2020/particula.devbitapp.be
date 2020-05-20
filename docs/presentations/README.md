@@ -30,3 +30,7 @@
 ## Matthias Willem
 
 <YoutubeVideo video-id="CyjNefYeeLE"/>
+
+## Laura De Baets
+
+<YoutubeVideo video-id="srgxaPmXEQM"/>
