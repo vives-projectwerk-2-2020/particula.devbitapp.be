@@ -13,6 +13,7 @@
   - [Tom Van Hove](#tom-van-hove)
   - [Laura De Baets](#laura-de-baets)
   - [Michiel Decoster](#michiel-decoster)
+  - [Niels Vanhove](#niels-vanhove)
 
 ## Student 1
 
@@ -45,3 +46,7 @@
 ## Michiel Decoster
 
 <YoutubeVideo video-id="5uhN4rB-LdQ"/>
+
+## Niels Vanhove
+
+<YoutubeVideo video-id="jYcjVjqNKEU"/>
