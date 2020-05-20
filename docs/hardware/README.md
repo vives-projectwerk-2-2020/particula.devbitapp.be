@@ -164,6 +164,9 @@ In this pic you'll see the unsoldered and soldered PCB
 
 ### Description of the final design
 
+You can find here the link to the GitHub repo of the schematic, board and partlist.
+[GitHub repo final design](https://github.com/vives-projectwerk-2-2020/FinalSolarChargeSystem)
+
 ### Final Schematic
 
 ![final schematic](./assets/BCS_FinalSchematic.png)
