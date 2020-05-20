@@ -5,7 +5,7 @@
 The Particula project is about a Smart Self-Sufficient
 Open Wireless Air Quality Sensor.
 This IoT device makes use of a particle sensor,
-a tph sensor (temperature, pressure, humidity) and LoRaWAN to transmit the data.
+a Environmental sensor (temperature, pressure, humidity) and LoRaWAN to transmit the data.
 
 Take a look below to see what hardware you need (boards, sensors, modules)
 to start building this project.
@@ -87,7 +87,7 @@ of the shield are configured correctly.
 | DIO 0 | D2
 | DIO 1 | D3
 
-### BME280 (TPH) sensor
+### BME280 (Temperature, Pressure, Humidity) Environmental sensor
 
 | From    | To       | Description         |
 |------------|------------|---------------------|
@@ -124,7 +124,7 @@ pins have been implemented:
 ## What pins should I use with a different board
 
 Choose UART RX and TX pins of your choice for the SDS011 particle sensor
-and I2C SDA and SCK pins for the BME280 TPH sensor.
+and I2C SDA and SCK pins for the BME280 Environmental sensor.
 You can add your board with it's preferred pins for serial communication
 to the `target_overrides` section in the `mbed_app.json` file.
 
@@ -166,12 +166,12 @@ it's work.
 
 ## Used modules and libraries
 
-### LoRaWAN RFM95W Transceiver (ISP)
+### LoRaWAN RFM95W Transceiver (SPI)
 
 - [Mbed-Simple-LoRaWAN](https://github.com/sillevl/mbed-Simple-LoRaWAN)
 - [AmbientSensorMessage](https://github.com/vives-projectwerk-2-2020/AmbiantSensorMessage)
 
-### Bosch BME280 TPH Sensor (I2C)
+### Bosch BME280 Environmental Sensor (I2C)
 
 - [ParticulaTPH](https://github.com/vives-projectwerk-2-2020/ParticulaTPH)
 
