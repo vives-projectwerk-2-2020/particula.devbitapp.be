@@ -9,7 +9,7 @@
 Clone the Particula frontend repository from github. When this is done, change
 directory to the cloned directory.
 
-To install all used libraries, use  :
+To install all used libraries, use:
 
 ```bash
 npm install
@@ -84,6 +84,26 @@ values and historical values in graphs.
 ![SensorPageCharts](./assets/SensorPageCharts.png)
 
 ![SensorPageCharts2](./assets/SensorPageCharts2.png)
+
+### The 'About' Page
+
+This aboutPage is a special web page on our site where our readers / visitors
+learn more about us and what we do. This webpage also tells about VIVES, the end
+product and how the site was made. In addition, the story of the journey from
+struggling to reaching our ultimate end.
+
+![aboutPage](./assets/aboutPage.png)
+
+### The 'Build Your Own Sensor' Page
+
+In the 'Build Your Own Sensor', readers / visitors can access all main
+components / boards used in our prototype. Each homemade board comes with a
+github repository with more info about the board and how to make it,
+including schedules. Every other component that we have not designed ourselves
+has a purchase link. Some of those components also have a github reposetory
+with the necessary firmware and info.
+
+![buildYourOwnSensorPage](./assets/buildSensorPage.png)
 
 ## Background Information
 
