@@ -229,8 +229,6 @@ too. When the battery voltage reaches 4.2V, the current will drop town to 0.
 
 How I did these measurements, can be found in mij Youtube video.
 
-
-
 ## Links
 
 * [MCP73871 datasheet](http://adafru.it/aMO)
