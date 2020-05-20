@@ -10,6 +10,7 @@
   - [Student 3](#student-3)
   - [Maxim Vanden Abeele](#maxim-vanden-abeele)
   - [Matthias Willem](#matthias-willem)
+  - [Laura De Baets](#laura-de-baets)
 
 ## Student 1
 
