@@ -11,6 +11,7 @@
   - [Maxim Vanden Abeele](#maxim-vanden-abeele)
   - [Matthias Willem](#matthias-willem)
   - [Laura De Baets](#laura-de-baets)
+  - [Michiel Decoster](#michiel-decoster)
 
 ## Student 1
 
@@ -35,3 +36,7 @@
 ## Laura De Baets
 
 <YoutubeVideo video-id="srgxaPmXEQM"/>
+
+## Michiel Decoster
+
+<YoutubeVideo video-id="5uhN4rB-LdQ"/>
