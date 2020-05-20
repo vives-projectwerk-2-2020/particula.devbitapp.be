@@ -2,8 +2,11 @@
 
 [View the firmware GitHub repo](https://github.com/vives-projectwerk-2-2020/Particula-Firmware)
 
-The Particula project is about a Smart Self-Sufficient Open Wireless Air Quality Sensor.
-This IoT device makes use of a particle sensor, a Enviromental sensor (temperature, pressure, humidity) and LoRaWAN to transmit the data.
+The Particula project is about a Smart Self-Sufficient
+Open Wireless Air Quality Sensor.
+This IoT device makes use of a particle sensor,
+a Enviromental sensor (temperature, pressure, humidity)
+and LoRaWAN to transmit the data.
 
 Take a look below to see what hardware you need (boards, sensors, modules)
 to start building this project.
