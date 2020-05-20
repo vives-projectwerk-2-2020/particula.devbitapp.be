@@ -13,6 +13,7 @@ module.exports = {
       ['/backend/', 'Backend'],
       ['/firmware/', 'Firmware'],
       ['/ttn/', 'The Things Network'],
+      ['/hardware/', 'Hardware'],
       ['/presentations/', 'Presentations']
     ],
     sidebarDepth: 1,
