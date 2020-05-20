@@ -5,7 +5,7 @@
 The Particula project is about a Smart Self-Sufficient
 Open Wireless Air Quality Sensor.
 This IoT device makes use of a particle sensor,
-a Environmental sensor (temperature, pressure, humidity) and LoRaWAN to transmit the data.
+a Enviromental sensor (temperature, pressure, humidity) and LoRaWAN to transmit the data.
 
 Take a look below to see what hardware you need (boards, sensors, modules)
 to start building this project.
@@ -79,13 +79,13 @@ of the shield are configured correctly.
 
 | Signal | Default pin
 |--|--|
-| MOSI | D11
-| MISO | D12
-| CLK | D13
-| NSS | A0 (A3 on NUCLEO_L432KC)
-| RESET | A1 (A4 on NUCLEO_L432KC)
-| DIO 0 | D2
-| DIO 1 | D3
+| MOSI | D11  |
+| MISO | D12  |
+| CLK | D13 |
+| NSS | A0 (A3 on NUCLEO_L432KC)  |
+| RESET | A1 (A4 on NUCLEO_L432KC)  |
+| DIO 0 | D2  |
+| DIO 1 | D3  |
 
 ### BME280 (Temperature, Pressure, Humidity) Environmental sensor
 
@@ -94,9 +94,9 @@ of the shield are configured correctly.
 | VDD        | 3V3        | power supply        |
 | GND        | GND        | common ground       |
 | SDO        | GND        | Selects 0X76 as the address on the I2C buss    |
-| CSB        | VDD        | Selects I2C for communication
-| SCK        | SCL        | I2C bus clock
-| SDI        | SDA        | I2C data bus
+| CSB        | VDD        | Selects I2C for communication |
+| SCK        | SCL        | I2C bus clock |
+| SDI        | SDA        | I2C data bus  |
 
 SDA and SCK lines for the different development boards:
 | Board     | SDA       | SCK       |
