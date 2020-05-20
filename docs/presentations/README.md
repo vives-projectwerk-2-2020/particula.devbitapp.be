@@ -10,12 +10,9 @@
   - [Student 3](#student-3)
   - [Maxim Vanden Abeele](#maxim-vanden-abeele)
   - [Matthias Willem](#matthias-willem)
-<<<<<<< HEAD
   - [Tom Van Hove](#tom-van-hove)
-=======
   - [Laura De Baets](#laura-de-baets)
   - [Michiel Decoster](#michiel-decoster)
->>>>>>> 3a120a8323ae2e1fe492768979e99b88d071f918
 
 ## Student 1
 
@@ -40,6 +37,7 @@
 ## Tom Van Hove
 
 <YoutubeVideo video-id="T0XSTuQ6kuM"/>
+
 ## Laura De Baets
 
 <YoutubeVideo video-id="srgxaPmXEQM"/>
