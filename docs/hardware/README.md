@@ -78,17 +78,17 @@ In the picture below you'll see how is set this configuration up.
 
 In the first pic it's the concept of the configuration.
 
-![alt text](./assets/BCS_AdafruitConceptConfig.png)
+![Concept configuration](./assets/BCS_AdafruitConceptConfig.png)
 
-![alt text](./assets/BCS_AdafruitSetup.jpg)
-![alt text](./assets/BCS_IndicationLed.jpg)
+![Setup van prototype](./assets/BCS_AdafruitSetup.jpg)
+![Indication leds](./assets/BCS_IndicationLed.jpg)
 
 This system was well tested, so I did some measurements  to see how good it works.
 You can see some pictures of the measurements below
 
 #### Charge voltage
 
-![alt text](./assets/BCS_ChargeVoltage.jpg)
+![Value of chargevoltage](./assets/BCS_ChargeVoltage.jpg)
 
 As we can see, the batteries are supplied with a voltage of 4.3V. A Li-Ion battery
 of 3.7V loads until it reaches 4.2V. You can see in the picture of the battery
@@ -96,7 +96,7 @@ voltage, that he isn't charged fully. So The charge current is maximum.
 
 #### Charge current
 
-![alt text](./assets/BCS_ChargeCurrent.jpg)
+![value of charge current](./assets/BCS_ChargeCurrent.jpg)
 
 When the battery voltage raises, the charge current will go down. When 4.2V is
 reached, the charge current is 0A.
@@ -104,13 +104,13 @@ So the current you see on the display, is near maximum.
 
 #### Battery voltage
 
-![alt text](./assets/BCS_BatteryVoltage.jpg)
+![value of battery voltage](./assets/BCS_BatteryVoltage.jpg)
 
 The battery voltage is not high, the voltage will go to 4.2V.
 
 #### solar panel voltage
 
-![alt text](./assets/BCS_SolarPanelVoltage.jpg)
+![value of solar panel voltage](./assets/BCS_SolarPanelVoltage.jpg)
 
 The solar panel provides a voltage of near 7V. This is quite high! In my own
 PCB I'll need to protect my main IC from this high voltage.
@@ -124,7 +124,7 @@ make my own design. I started with a prototype, and I'll explain how this works.
 
 ### Schematic
 
-![alt text](./assets/BCS_SchematicPrototype.png)
+![schematic prototype](./assets/BCS_SchematicPrototype.png)
 
 #### Description of the schematic
 
@@ -146,8 +146,8 @@ The other components are some interfacing for these IC's.
 
 ### Board
 
-![alt text](./assets/BCS_BoardPrototype.png)
-![alt text](./assets/BCS_BoardPrototypePoly.png)
+![board prototype ](./assets/BCS_BoardPrototype.png)
+![board prototype with polygon](./assets/BCS_BoardPrototypePoly.png)
 
 #### Description of the board
 
@@ -160,13 +160,13 @@ wasn't any problem for us.
 
 In this pic you'll see the unsoldered and soldered PCB
 
-![alt text](./assets/BCS_PrototypePBC.png)
+![manufactured pcb](./assets/BCS_PrototypePCB.png)
 
 ### Description of the final design
 
 ### Final Schematic
 
-![alt text](./assets/BCS_FinalSchematic.png)
+![final schematic](./assets/BCS_FinalSchematic.png)
 
 #### Description of the final schematic
 
@@ -180,8 +180,8 @@ This PCB will fit on the main PCB (See Niels his documents).
 
 ### Final Board
 
-![alt text](./assets/BCS_FinalBoard.png)
-![alt text](./assets/BCS_FinalBoardPoly.png)
+![final board](./assets/BCS_FinalBoard.png)
+![final board with polygon](./assets/BCS_FinalBoardPoly.png)
 
 #### Description of the final Board
 
@@ -210,8 +210,8 @@ The charge PCB was still connected to the batteries.
 The setup have been outside for 3 - 4 weeks, day and night.
 In the picture below, you'll see the setup I made.
 
-![alt text](./assets/BCS_DurationSetup.jpg)
-![alt text](./assets/BCS_OutdoorConfig.jpg)
+![duration setup](./assets/BCS_DurationSetup.jpg)
+![outdoor config](./assets/BCS_OutdoorConfig.jpg)
 
 I went daily for a measurement of the PCB. I measured the voltage of the solar
 panel, IC input, IC output, battery voltage and charge current.
@@ -229,7 +229,7 @@ too. When the battery voltage reaches 4.2V, the current will drop town to 0.
 
 How I did these measurements, can be found in mij Youtube video.
 
-[My video](https://www.youtube.com/watch?v=T0XSTuQ6kuM)
+
 
 ## Links
 

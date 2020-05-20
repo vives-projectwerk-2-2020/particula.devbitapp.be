@@ -10,6 +10,7 @@
   - [Student 3](#student-3)
   - [Maxim Vanden Abeele](#maxim-vanden-abeele)
   - [Matthias Willem](#matthias-willem)
+  - [Tom Van Hove](#tom-van-hove)
 
 ## Student 1
 
@@ -30,3 +31,7 @@
 ## Matthias Willem
 
 <YoutubeVideo video-id="CyjNefYeeLE"/>
+
+## Tom Van Hove
+
+<YoutubeVideo video-id="T0XSTuQ6kuM"/>
