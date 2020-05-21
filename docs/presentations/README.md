@@ -9,6 +9,8 @@
   - [Laura De Baets](#laura-de-baets)
   - [Michiel Decoster](#michiel-decoster)
   - [Niels Vanhove](#niels-vanhove)
+  - [Arno Vanneste](#arno-vanneste)
+  - [Jarno Thierens](#jarno-thierens)
 
 ## Maxim Vanden Abeele
 
@@ -33,3 +35,11 @@
 ## Niels Vanhove
 
 <YoutubeVideo video-id="jYcjVjqNKEU"/>
+
+## Arno Vanneste
+
+<YoutubeVideo video-id="B8_29xgzK4A"/>
+
+## jarno-thierens
+
+<YoutubeVideo video-id="KsR5FMAZ-7o"/>
