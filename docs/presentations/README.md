@@ -40,6 +40,6 @@
 
 <YoutubeVideo video-id="B8_29xgzK4A"/>
 
-## jarno-thierens
+## Jarno Thierens
 
 <YoutubeVideo video-id="KsR5FMAZ-7o"/>
