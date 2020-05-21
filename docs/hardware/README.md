@@ -2,14 +2,14 @@
 
 ## Battery Charge System
 
-## Description
+### Description
 
 This panel provide a charge system for charing the batteries via a solar cell.
 It seems to be very easy to make this, but actually there comes a lot to play
 in the game.
 You'll read here how I made this PCB.
 
-### Develop boards
+#### Develop boards
 
 I first started with some development boards. These PCB's are for sell on the web.
 I got 3 boards, so I need to find out witch one was the best for our project.
@@ -33,9 +33,9 @@ I worked together with my classmate Niels to find out with PCB was the best.
 We came to a conclusion that the Adafruit board was the best for us.
 So the next step was to find oud how it works and how we need to setup the prototype.
 
-#### More information about the development board
+##### More information about the development board
 
-#### Specifications
+##### Specifications
 
 * 3.7V/4.2V Lithium Ion or Lithium Polymer battery charger
 * Charge with 5-6V DC, USB or 6V solar panel!
@@ -54,7 +54,7 @@ battery from constantly charging/discharging
 [thermistor](http://adafru.it/372) (not included) - suggested for outdoor projects
 where the battery may get hot (50°C) or cold (0°C).
 
-#### Indicator led's
+##### Indicator led's
 
 * The red PWR LED indicates that there is good power connected to the charger.
 If this LED is not lit, something is wrong with the power supply
@@ -66,7 +66,7 @@ will come on.
 * The green DONE LED is pretty easy to understand as well - when it's lit the
 battery is charged up! Very handy for when you want to know that everything is done.
 
-#### Extra features
+##### Extra features
 
 * Load Sharing
 * Temperature monitoring
@@ -86,7 +86,7 @@ In the first pic it's the concept of the configuration.
 This system was well tested, so I did some measurements  to see how good it works.
 You can see some pictures of the measurements below
 
-#### Charge voltage
+##### Charge voltage
 
 ![Value of chargevoltage](./assets/BCS_ChargeVoltage.jpg)
 
@@ -94,7 +94,7 @@ As we can see, the batteries are supplied with a voltage of 4.3V. A Li-Ion batte
 of 3.7V loads until it reaches 4.2V. You can see in the picture of the battery
 voltage, that he isn't charged fully. So The charge current is maximum.
 
-#### Charge current
+##### Charge current
 
 ![value of charge current](./assets/BCS_ChargeCurrent.jpg)
 
@@ -102,31 +102,31 @@ When the battery voltage raises, the charge current will go down. When 4.2V is
 reached, the charge current is 0A.
 So the current you see on the display, is near maximum.
 
-#### Battery voltage
+##### Battery voltage
 
 ![value of battery voltage](./assets/BCS_BatteryVoltage.jpg)
 
 The battery voltage is not high, the voltage will go to 4.2V.
 
-#### solar panel voltage
+##### solar panel voltage
 
 ![value of solar panel voltage](./assets/BCS_SolarPanelVoltage.jpg)
 
 The solar panel provides a voltage of near 7V. This is quite high! In my own
 PCB I'll need to protect my main IC from this high voltage.
 
-## Our own design
+### Our own design
 
-### Description of my own design
+#### Description of my own design
 
 I used the development boards to look for some inspiration, so I could (easily)
 make my own design. I started with a prototype, and I'll explain how this works.
 
-### Schematic
+#### Schematic
 
 ![schematic prototype](./assets/BCS_SchematicPrototype.png)
 
-#### Description of the schematic
+##### Description of the schematic
 
 This is the prototype schematic with actually some bugs in it.
 The first IC (MCP73871) manages the battery. This was the same IC of the
@@ -144,12 +144,12 @@ document, and will explain there what went wrong.
 
 The other components are some interfacing for these IC's.
 
-### Board
+#### Board
 
 ![board prototype ](./assets/BCS_BoardPrototype.png)
 ![board prototype with polygon](./assets/BCS_BoardPrototypePoly.png)
 
-#### Description of the board
+##### Description of the board
 
 The next step was to draw the board. This is quite easy. The first picture is
 the schematic witout polygon, the second one is the PCB with polygon. We let
@@ -162,16 +162,16 @@ In this pic you'll see the unsoldered and soldered PCB
 
 ![manufactured pcb](./assets/BCS_PrototypePCB.png)
 
-### Description of the final design
+#### Description of the final design
 
 You can find here the link to the GitHub repo of the schematic, board and partlist.
 [GitHub repo final design](https://github.com/vives-projectwerk-2-2020/FinalSolarChargeSystem)
 
-### Final Schematic
+#### Final Schematic
 
 ![final schematic](./assets/BCS_FinalSchematic.png)
 
-#### Description of the final schematic
+##### Description of the final schematic
 
 As you can see here, the other IC's are removed. This because they have the same
 functionality as the MCP73871. I placed a voltage regulator before the IC, this
@@ -181,17 +181,17 @@ Here I brought the STAT1, STAT2 and PG pins outside, so we can manage the batter
 on the Nucleo.
 This PCB will fit on the main PCB (See Niels his documents).
 
-### Final Board
+#### Final Board
 
 ![final board](./assets/BCS_FinalBoard.png)
 ![final board with polygon](./assets/BCS_FinalBoardPoly.png)
 
-#### Description of the final Board
+##### Description of the final Board
 
 There is not so much to tell about it, here to, just draw the wires.
 We couldn't order these PCB's because of the COVID-19 pandemic.
 
-## Tests
+### Tests
 
 When we had the prototype PCB, we soldered them, and then we need to test if they
 really work.
@@ -232,7 +232,7 @@ too. When the battery voltage reaches 4.2V, the current will drop town to 0.
 
 How I did these measurements, can be found in mij Youtube video.
 
-## Links
+### Links
 
 * [MCP73871 datasheet](http://adafru.it/aMO)
 * [Fritzing object in Adafruit Fritzing library](http://adafru.it/aP3)
@@ -250,7 +250,7 @@ Below you can see what it looks like.
 This Antenna on the board is based on
 [this](http://www.ti.com/lit/an/swra228c/swra228c.pdf) design.
 
-## Explanation of the Antenna PCB board
+### Explanation of the Antenna PCB board
 
 Below you see the antenna board. The PCB antenna on this board is suitable for
  a frequency around 868MHz.
@@ -272,7 +272,7 @@ You can solve this by doing 2 things:
 
 This is discussed below here.
 
-### Adjust length
+#### Adjust length
 
 You can adjust the length here, by scratching away some copper at the end
  of the antenna. The total length of the last piece of the antenna is 1,25 cm
@@ -282,7 +282,7 @@ You can adjust the length here, by scratching away some copper at the end
 
 By adjusting the length of the antenna, the antenna is now al more suitable for 868MHz.
 
-### Matching network
+#### Matching network
 
 By adding a matching network now, we can improve the impedance of the antenna more.
 
@@ -314,7 +314,7 @@ Below you can see that the VSWR at 868MHz is 1.112. This mean that you're
 The dimensions of the PCB are also very important. If the dimensions
  are different from here, you must again determine the length and the matching network.
 
-### RF96
+#### RF96
 
 The RF96 module is a module suitable for ultra-long range spread spectrum
  communications. This module has a 20 dBm power amplifier. This means that you
@@ -327,7 +327,7 @@ This PCB is then clicked on the main PCB.
 
 ![RF95 pinout](./assets/RF95-pinout.png)
 
-### schematic and print in Eagle
+#### schematic and print in Eagle
 
 Here you can see the schematic drawn in Eagle. At the top you see the pins,
  these are then connected to the main PCB. below that you see the RF96 chip.
@@ -341,14 +341,14 @@ Below you can see what the PCB looks like in eagle.
 
 ![PCB](./assets/PCB.png)
 
-### tests that happened
+#### tests that happened
 
 You can view the tests
  [[here](https://github.com/vives-projectwerk-2-2020/LoRaWAN-antenna/tree/master/testing)].
 
-## Make it yourself
+### Make it yourself
 
-### Develop the PCB
+#### Develop the PCB
 
 First you need to develop the PCB. You can do this by sending a zip to a manufacturer.
 Like for example with this manufacturer([JLCPCB](https://jlcpcb.com/)).
@@ -356,7 +356,7 @@ The ZIP file is located here in the root and is called 'LoRaWAN_antenna.zip'.
 You can download and upload this on the manufacturer's website.
 If you want to make changes to the PCB you can edit it in the folder 'PCB-antenna-eagle'.
 
-### Order the components
+#### Order the components
 
 Then you have to order the components. These are the components:
 
@@ -367,7 +367,7 @@ Then you have to order the components. These are the components:
 
 for 1 PCB you need 2 capacitors, 1 coil, 1 RF95 module and 15 male pins.
 
-### Solder everything together
+#### Solder everything together
 
 If you then have your PCB and components, you can start soldering.
 You should not scratch the antenna anymore,
@@ -376,7 +376,7 @@ For soldering it is best to start with the RF96 module
  and then the capacitors and the coil.
 Then solder the pins on the last.
 
-## Placing the installation
+### Placing the installation
 
 If you have connected all the boards(main + solar + antenna), you can place
  this where you want.
