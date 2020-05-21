@@ -320,6 +320,7 @@ The RF96 module is a module suitable for ultra-long range spread spectrum
  communications. This module has a 20 dBm power amplifier. This means that you
  have an output power of 100mW. Because the impedance is now correct, all power
  will also be radiated effectively.
+ For more information about the specifications, you can look in the [datasheet](https://cdn.sparkfun.com/assets/learn_tutorials/8/0/4/RFM95_96_97_98W.pdf).
 
 Below you see the RF95 module. All pins are brought out through the pins.
  Except the pin that goes to the antenna.
@@ -352,7 +353,8 @@ You can view the tests
 
 First you need to develop the PCB. You can do this by sending a zip to a manufacturer.
 Like for example with this manufacturer([JLCPCB](https://jlcpcb.com/)).
-The ZIP file is located here in the root and is called 'LoRaWAN_antenna.zip'.
+The ZIP file is located in the root and is called 'LoRaWAN_antenna.zip'.
+check out [this](https://github.com/vives-projectwerk-2-2020/LoRaWAN-antenna) github
 You can download and upload this on the manufacturer's website.
 If you want to make changes to the PCB you can edit it in the folder 'PCB-antenna-eagle'.
 
