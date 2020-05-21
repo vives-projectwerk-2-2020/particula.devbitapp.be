@@ -230,7 +230,7 @@ The charge current depends on the weather. When it is a nice day, you'll reach
 higher current measurements. The charge current depends on the battery voltage
 too. When the battery voltage reaches 4.2V, the current will drop town to 0.
 
-How I did these measurements, can be found in mij Youtube video.
+How I did these measurements, can be found in my Youtube video.
 
 ### Links
 
