@@ -9,6 +9,7 @@
   - [Laura De Baets](#laura-de-baets)
   - [Michiel Decoster](#michiel-decoster)
   - [Niels Vanhove](#niels-vanhove)
+  - [Arno Vanneste](#arno-vanneste)
 
 ## Maxim Vanden Abeele
 
