@@ -11,6 +11,7 @@
   - [Niels Vanhove](#niels-vanhove)
   - [Arno Vanneste](#arno-vanneste)
   - [Jarno Thierens](#jarno-thierens)
+  - [Drees Camertijn](#drees-camertijn)
 
 ## Maxim Vanden Abeele
 
@@ -43,3 +44,7 @@
 ## Jarno Thierens
 
 <YoutubeVideo video-id="KsR5FMAZ-7o"/>
+
+## Drees Camertijn
+
+<YoutubeVideo video-id="pTnu5YSXs-Q"/>
