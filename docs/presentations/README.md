@@ -16,6 +16,8 @@
   - [Geylian Lingier](#geylian-lingier)
   - [Benjamin D'hondt](#benjamin-d-hondt)
   - [Reinder Vis](#reinder-vis)
+  - [Eric Schuitmaker](#eric-schuitmaker)
+  - [Lammert Bakker](#lammert-bakker)
 
 ## Maxim Vanden Abeele
 
@@ -68,3 +70,11 @@
 ## Reinder vis
 
 <YoutubeVideo video-id="vFYhLYnlmww"/>
+
+## Eric Schuitmaker
+
+<YoutubeVideo video-id="1Tcy5rgn9cc"/>
+
+## Lammert Bakker
+
+<YoutubeVideo video-id="ugJobdFSRAg"/>
