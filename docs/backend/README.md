@@ -179,7 +179,7 @@ Which need a authorized user to request it.
 
 The token is created inside the login method, and will be set for 10 seconds.
 To change the lifetime of the token, change the expire time.
-`` Expires = DateTime.UtcNow.AddMinutes(10) ``
+``Expires = DateTime.UtcNow.AddMinutes(10)``
 
 ### further instructions & tips
 
