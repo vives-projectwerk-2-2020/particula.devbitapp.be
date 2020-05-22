@@ -23,6 +23,7 @@
   - [jibe defoor](#jibe-defoor)
   - [Michiel Goethals](#michiel-goethals)
   - [Martijn Everaert](#martijn-everaert)
+  - [Jonas Loete](#jonas-loete)
 
 ## Maxim Vanden Abeele
 
@@ -104,3 +105,6 @@
 
 <YoutubeVideo video-id="teiWW_1uUb0"/>
 
+## Jonas Loete
+
+<YoutubeVideo video-id="Ek0dTyiKSBM"/>
