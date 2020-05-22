@@ -218,6 +218,5 @@ To be able to display the published values in the frontend of your
 webapplication you need to grab the code from `sub.js` and change the
 topic to the topic your publisher has.
 
-After you have done this you are subscribed to your publisher and you can 
+After you have done this you are subscribed to your publisher and you can
 use the values you have received as you see fit.
-
