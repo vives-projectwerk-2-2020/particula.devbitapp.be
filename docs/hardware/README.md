@@ -646,6 +646,8 @@ can escape if condensation forms.
 
 ## Boost converter
 
+You can find the GitHub repo here [GitHub Repo BoostConveter](https://github.com/vives-projectwerk-2-2020/BoostConverter)
+
 ### Description boost converter
 
 The solar charge board can only deliver 3V3 so we had to make a board that's
