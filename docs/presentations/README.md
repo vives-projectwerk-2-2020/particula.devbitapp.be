@@ -15,6 +15,8 @@
   - [Drees Camertijn](#drees-camertijn)
   - [Geylian Lingier](#geylian-lingier)
   - [Benjamin D'hondt](#benjamin-d-hondt)
+  - [Tarik Verschaetse](#tarik-verschaetse)
+  - [Ladzlo Dejonghe](#ladzlo-dejonghe)
   - [Reinder Vis](#reinder-vis)
   - [Eric Schuitmaker](#eric-schuitmaker)
   - [Lammert Bakker](#lammert-bakker)
@@ -69,6 +71,14 @@
 
 <YoutubeVideo video-id="r7Iw2lIK0Go"/>
 
+## Tarik Verschaetse
+
+<YoutubeVideo video-id="OwilvMEQObo"/>
+
+## Ladzlo Dejonghe
+
+<YoutubeVideo video-id="aVxCwiZIHi8"/>
+
 ## Reinder vis
 
 <YoutubeVideo video-id="vFYhLYnlmww"/>
@@ -84,6 +94,7 @@
 ## jibe defoor
 
 <YoutubeVideo video-id="HRQIKBkuKCE"/>
+
 ## Michiel Goethals
 
 <YoutubeVideo video-id="Bc5FUhdS8wE"/>
