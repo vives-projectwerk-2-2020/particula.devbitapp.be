@@ -18,6 +18,7 @@
   - [Reinder Vis](#reinder-vis)
   - [Eric Schuitmaker](#eric-schuitmaker)
   - [Lammert Bakker](#lammert-bakker)
+  - [jibe defoor](#jibe-defoor)
   - [Michiel Goethals](#michiel-goethals)
 
 ## Maxim Vanden Abeele
@@ -80,6 +81,9 @@
 
 <YoutubeVideo video-id="ugJobdFSRAg"/>
 
+## jibe defoor
+
+<YoutubeVideo video-id="HRQIKBkuKCE"/>
 ## Michiel Goethals
 
 <YoutubeVideo video-id="Bc5FUhdS8wE"/>
