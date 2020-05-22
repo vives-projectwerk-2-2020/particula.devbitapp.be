@@ -16,6 +16,7 @@
   - [Geylian Lingier](#geylian-lingier)
   - [Benjamin D'hondt](#benjamin-d-hondt)
   - [Tarik Verschaetse](#tarik-verschaetse)
+  - [Ladzlo Dejonghe](#ladzlo-dejonghe)
 
 ## Maxim Vanden Abeele
 
@@ -68,3 +69,7 @@
 ## Tarik Verschaetse
 
 <YoutubeVideo video-id="OwilvMEQObo"/>
+
+## Ladzlo Dejonghe
+
+<YoutubeVideo video-id="aVxCwiZIHi8"/>
