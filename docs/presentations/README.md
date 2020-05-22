@@ -17,6 +17,11 @@
   - [Benjamin D'hondt](#benjamin-d-hondt)
   - [Tarik Verschaetse](#tarik-verschaetse)
   - [Ladzlo Dejonghe](#ladzlo-dejonghe)
+  - [Reinder Vis](#reinder-vis)
+  - [Eric Schuitmaker](#eric-schuitmaker)
+  - [Lammert Bakker](#lammert-bakker)
+  - [jibe defoor](#jibe-defoor)
+  - [Michiel Goethals](#michiel-goethals)
 
 ## Maxim Vanden Abeele
 
@@ -73,3 +78,23 @@
 ## Ladzlo Dejonghe
 
 <YoutubeVideo video-id="aVxCwiZIHi8"/>
+
+## Reinder vis
+
+<YoutubeVideo video-id="vFYhLYnlmww"/>
+
+## Eric Schuitmaker
+
+<YoutubeVideo video-id="1Tcy5rgn9cc"/>
+
+## Lammert Bakker
+
+<YoutubeVideo video-id="ugJobdFSRAg"/>
+
+## jibe defoor
+
+<YoutubeVideo video-id="HRQIKBkuKCE"/>
+
+## Michiel Goethals
+
+<YoutubeVideo video-id="Bc5FUhdS8wE"/>
