@@ -104,10 +104,7 @@
 ## Martijn Everaert
 
 <YoutubeVideo video-id="teiWW_1uUb0"/>
-<<<<<<< HEAD
 
 ## Jonas Loete
 
 <YoutubeVideo video-id="Ek0dTyiKSBM"/>
-=======
->>>>>>> 2fa2ddf7d28f3288bde81e408243c20185007c06
