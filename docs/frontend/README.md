@@ -33,9 +33,10 @@ A small presentation of the design of the frontend application.
 
 ### Home Page
 
-When you go to the hosted webpage, you will see the home page.
+When you go to the homepage, you will see a map.
+Several markers are placed on this map. every marker shows the location of a sensor.
+In the picture below you will see a preview of the homepage.
 
-Sneak peak homepage :
 ![HomePage](./assets/homePage2.png)
 
 ### Sidebar
