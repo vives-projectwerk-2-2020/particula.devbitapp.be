@@ -11,6 +11,7 @@
   - [Niels Vanhove](#niels-vanhove)
   - [Arno Vanneste](#arno-vanneste)
   - [Jarno Thierens](#jarno-thierens)
+  - [Geylian Lingier](#geylian-lingier)
 
 ## Maxim Vanden Abeele
 
@@ -47,3 +48,7 @@
 ## Arno Willems
 
 <YoutubeVideo video-id="nyzP61YM0Eg"/>
+
+## Geylian Lingier
+
+<YoutubeVideo video-id="EAuvb1mn-V8&t=252s"/>
