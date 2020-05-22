@@ -15,6 +15,7 @@
   - [Drees Camertijn](#drees-camertijn)
   - [Geylian Lingier](#geylian-lingier)
   - [Benjamin D'hondt](#benjamin-d-hondt)
+  - [Lammert Bakker](#lammert-bakker)
 
 ## Maxim Vanden Abeele
 
@@ -63,3 +64,7 @@
 ## Benjamin D'hondt
 
 <YoutubeVideo video-id="r7Iw2lIK0Go"/>
+
+## Lammert Bakker
+
+<YoutubeVideo video-id="ugJobdFSRAg"/>
