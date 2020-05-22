@@ -14,7 +14,8 @@
   - [Arno Willems](#arno-willems)
   - [Drees Camertijn](#drees-camertijn)
   - [Geylian Lingier](#geylian-lingier)
-  - [Benjamin D'hondt](#benjamin-dhondt)
+  - [Benjamin D'hondt](#benjamin-d-hondt)
+  - [Reinder Vis](#reinder-vis)
   - [Eric Schuitmaker](#eric-schuitmaker)
   - [Lammert Bakker](#lammert-bakker)
   - [jibe defoor](#jibe-defoor)
@@ -66,6 +67,10 @@
 ## Benjamin D'hondt
 
 <YoutubeVideo video-id="r7Iw2lIK0Go"/>
+
+## Reinder vis
+
+<YoutubeVideo video-id="vFYhLYnlmww"/>
 
 ## Eric Schuitmaker
 
