@@ -174,7 +174,8 @@ To call specific functions change the url to:
 
 When a user performs a correct login request with the good credentials,
 a JWT token will be created and send back to the frontend.
-This token must be used when the user is trying to reach a function which need a authorized user to request it.
+This token must be used when the user is trying to reach a function.
+Which need a authorized user to request it.
 
 The token is created inside the login method, and will be set for 10 seconds.
 To change the lifetime of the token, change the expire time.
@@ -183,7 +184,8 @@ To change the lifetime of the token, change the expire time.
 ### further instructions & tips
 
 The api send a request to another api linked with the database.
-To make the project better and cleaner, use the code the make the token and checks in the other API
+To make the project better and cleaner,
+use the code the make the token and checks in the other API
 This does delete the extra linking with makes it faster and better.
 
 ## Development
