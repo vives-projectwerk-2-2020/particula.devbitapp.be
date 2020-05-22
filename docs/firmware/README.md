@@ -5,7 +5,8 @@
 The Particula project is about a Smart Self-Sufficient
 Open Wireless Air Quality Sensor.
 This IoT device makes use of a particle sensor,
-a tph sensor (temperature, pressure, humidity) and LoRaWAN to transmit the data.
+a Enviromental sensor (temperature, pressure, humidity)
+and LoRaWAN to transmit the data.
 
 Take a look below to see what hardware you need (boards, sensors, modules)
 to start building this project.
@@ -77,40 +78,40 @@ mbed compile -f
 We use the default pinmap of the shield, make sure the dip switches on the back
 of the shield are configured correctly.
 
-| Signal | Default pin
-|--|--|
-| MOSI | D11
-| MISO | D12
-| CLK | D13
-| NSS | A0 (A3 on NUCLEO_L432KC)
-| RESET | A1 (A4 on NUCLEO_L432KC)
-| DIO 0 | D2
-| DIO 1 | D3
+| Signal | Default pin              |
+| ------ | ------------------------ |
+| MOSI   | D11                      |
+| MISO   | D12                      |
+| CLK    | D13                      |
+| NSS    | A0 (A3 on NUCLEO_L432KC) |
+| RESET  | A1 (A4 on NUCLEO_L432KC) |
+| DIO 0  | D2                       |
+| DIO 1  | D3                       |
 
-### BME280 (TPH) sensor
+### BME280 (Temperature, Pressure, Humidity) Environmental sensor
 
-| From    | To       | Description         |
-|------------|------------|---------------------|
-| VDD        | 3V3        | power supply        |
-| GND        | GND        | common ground       |
-| SDO        | GND        | Selects 0X76 as the address on the I2C buss    |
-| CSB        | VDD        | Selects I2C for communication
-| SCK        | SCL        | I2C bus clock
-| SDI        | SDA        | I2C data bus
+| From | To  | Description                                 |
+| ---- | --- | ------------------------------------------- |
+| VDD  | 3V3 | power supply                                |
+| GND  | GND | common ground                               |
+| SDO  | GND | Selects 0X76 as the address on the I2C buss |
+| CSB  | VDD | Selects I2C for communication               |
+| SCK  | SCL | I2C bus clock                               |
+| SDI  | SDA | I2C data bus                                |
 
 SDA and SCK lines for the different development boards:
-| Board     | SDA       | SCK       |
-|-----------|-----------|-----------|
-| Nucleo_L432KC | D4 | D5 |
+| Board         | SDA | SCK |
+| ------------- | --- | --- |
+| Nucleo_L432KC | D4  | D5  |
 | Nucleo_L476RG | D14 | D15 |
 
 ### SDS011 (Particle) sensor
 
 TX and RX lines for the different development boards:
-| Board     | TX     | RX      |
-|-----------|-----------|-----------|
-| Nucleo_L432KC | D1 | D0 |
-| Nucleo_L476RG | A4 | A5 |
+| Board         | TX  | RX  |
+| ------------- | --- | --- |
+| Nucleo_L432KC | D1  | D0  |
+| Nucleo_L476RG | A4  | A5  |
 
 (remember to connect sensor-RX to nucleo-TX and vice versa)
 
@@ -118,13 +119,13 @@ For later implementation of the charge controller functionality the following
 pins have been implemented:
 
 | Pin 1 | Pin 2 | Pin 3 |
-|---|---|---|
-| D6 | D7 | D8 |
+| ----- | ----- | ----- |
+| D6    | D7    | D8    |
 
 ## What pins should I use with a different board
 
 Choose UART RX and TX pins of your choice for the SDS011 particle sensor
-and I2C SDA and SCK pins for the BME280 TPH sensor.
+and I2C SDA and SCK pins for the BME280 Environmental sensor.
 You can add your board with it's preferred pins for serial communication
 to the `target_overrides` section in the `mbed_app.json` file.
 
@@ -166,12 +167,12 @@ it's work.
 
 ## Used modules and libraries
 
-### LoRaWAN RFM95W Transceiver (ISP)
+### LoRaWAN RFM95W Transceiver (SPI)
 
 - [Mbed-Simple-LoRaWAN](https://github.com/sillevl/mbed-Simple-LoRaWAN)
 - [AmbientSensorMessage](https://github.com/vives-projectwerk-2-2020/AmbiantSensorMessage)
 
-### Bosch BME280 TPH Sensor (I2C)
+### Bosch BME280 Environmental Sensor (I2C)
 
 - [ParticulaTPH](https://github.com/vives-projectwerk-2-2020/ParticulaTPH)
 
