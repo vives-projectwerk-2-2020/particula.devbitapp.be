@@ -18,6 +18,7 @@
   - [Reinder Vis](#reinder-vis)
   - [Eric Schuitmaker](#eric-schuitmaker)
   - [Lammert Bakker](#lammert-bakker)
+  - [Michiel Goethals](#michiel-goethals)
 
 ## Maxim Vanden Abeele
 
@@ -78,3 +79,7 @@
 ## Lammert Bakker
 
 <YoutubeVideo video-id="ugJobdFSRAg"/>
+
+## Michiel Goethals
+
+<YoutubeVideo video-id="Bc5FUhdS8wE"/>
