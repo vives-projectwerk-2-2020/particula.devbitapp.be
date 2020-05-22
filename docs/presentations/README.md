@@ -14,6 +14,7 @@
   - [Arno Willems](#arno-willems)
   - [Drees Camertijn](#drees-camertijn)
   - [Geylian Lingier](#geylian-lingier)
+  - [Benjamin D'hondt](#benjamin-d-hondt)
 
 ## Maxim Vanden Abeele
 
@@ -58,3 +59,7 @@
 ## Geylian Lingier
 
 <YoutubeVideo video-id="EAuvb1mn-V8"/>
+
+## Benjamin D'hondt
+
+<YoutubeVideo video-id="r7Iw2lIK0Go"/>
