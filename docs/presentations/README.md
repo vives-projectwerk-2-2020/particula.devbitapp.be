@@ -14,16 +14,17 @@
   - [Arno Willems](#arno-willems)
   - [Drees Camertijn](#drees-camertijn)
   - [Geylian Lingier](#geylian-lingier)
-  - [Benjamin D'hondt](#benjamin-d-hondt)
+  - [Benjamin D'hondt](#benjamin-dhondt)
   - [Tarik Verschaetse](#tarik-verschaetse)
   - [Ladzlo Dejonghe](#ladzlo-dejonghe)
-  - [Reinder Vis](#reinder-vis)
+  - [Reinder vis](#reinder-vis)
   - [Eric Schuitmaker](#eric-schuitmaker)
   - [Lammert Bakker](#lammert-bakker)
   - [jibe defoor](#jibe-defoor)
   - [Michiel Goethals](#michiel-goethals)
   - [Martijn Everaert](#martijn-everaert)
   - [Jonas Loete](#jonas-loete)
+  - [Bram Soenens](#bram-soenens)
 
 ## Maxim Vanden Abeele
 
@@ -108,3 +109,7 @@
 ## Jonas Loete
 
 <YoutubeVideo video-id="Ek0dTyiKSBM"/>
+
+## Bram Soenens
+
+<YoutubeVideo video-id="xoulJ34iWyI"/>
